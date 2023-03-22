@@ -13,7 +13,7 @@ M_Vint = zeros(length(H), sizC(2));
 
 for i=1:sizC(2)
     %                       Depth        Velocity     H = QueryPoints   
-    M_Vint(:, i) = interp1(C{1,i}(:,1), C{1,i}(:,2),  H, "linear");   
+    M_Vint(:, i) = interp1(C{1,i}(:,1), C{1,i}(:,2),  H, "linear");
     k = 0;
     while (k<length(H))
         k = k + 1;
