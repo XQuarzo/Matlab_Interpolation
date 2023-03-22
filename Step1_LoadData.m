@@ -19,7 +19,7 @@ HMax = -inf;
 k=1;
 for i=1:NumberOfFiles
     C(1,i) = {readmatrix(FilesNameRoot + i + ".xlsx")};
-
+    
     VMin_i = min(C{1,i}(:,2));
     if VMin_i < VMin
         VMin = VMin_i;
